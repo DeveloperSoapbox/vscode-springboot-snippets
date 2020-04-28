@@ -1,0 +1,27 @@
+{
+    "Spring Boot DB URL (SQLite) YAML": {
+        "prefix": [
+            "sb-yaml-sqlite"
+        ],
+        "body": [
+        ],
+        "description": "Generates Spring Boot datasource URL for SQLite database in application.yaml."
+    },
+    "Spring Boot DB URL (H2)": {
+        "prefix": [
+            "sb-yaml-h2"
+        ],
+        "body": [
+            "spring:",
+            "    datasource:",
+            "        url: jdbc:h2:mem::${0:databaseName}",
+            "        driverClassName: org.h2.Driver",
+            "    jpa:",
+            "        hibernate:            ",
+            "            database-platform: org.hibernate.dialect.H2Dialect",
+            "            #show-sql: true",
+            "            #ddl-auto: create-drop"
+        ],
+        "description": "Spring Boot datasource properties for H2 database in application.yaml."
+    }
+}

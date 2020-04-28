@@ -1,0 +1,24 @@
+{
+    "Spring Boot DB URL (SQLite)": {
+        "prefix": [
+            "sb-prop-sqlite"
+        ],
+        "body": [
+            "spring.datasource.url=jdbc:sqlite:${0:databaseName.db}"
+        ],
+        "description": "Generates Spring Boot datasource URL for SQLite database."
+    },
+    "Spring Boot DB URL (H2)": {
+        "prefix": [
+            "sb-prop-h2"
+        ],
+        "body": [
+            "spring.datasource.url=jdbc:h2:mem:${0:databaseName}",
+            "spring.datasource.driverClassName=org.h2.Driver",
+            "spring.jpa.database-platform=org.hibernate.dialect.H2Dialect",
+            "#spring.jpa.hibernate.ddl-auto=create-drop",
+            "#spring.jpa.show-sql=true"
+        ],
+        "description": "Spring Boot datasource properties for H2 database."
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "name": "vscode-springboot-snippets",
+    "displayName": "Spring Boot Snippets",
+    "description": "Useful snippets for Spring Boot projects.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "spring-boot-properties-yaml",
+                "aliases": [
+                    "Spring Boot Properties Yaml"
+                ],
+                "filenamePatterns": [
+                    "application*.yml",
+                    "application*.yaml",
+                    "bootstrap*.yml",
+                    "bootstrap*.yaml"
+                ]
+            },
+            {
+                "id": "spring-boot-properties",
+                "aliases": [
+                    "Spring Boot Properties"
+                ],
+                "filenamePatterns": [
+                    "application*.properties",
+                    "bootstrap*.properties"
+                ]
+            }
+        ],
+        "snippets": [
+            {
+                "language": "spring-boot-properties",
+                "path": "./snippets/spring-boot-properties.json"
+            },
+            {
+                "language": "spring-boot-properties-yaml",
+                "path": "./snippets/spring-boot-properties-yaml.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/java.json"
+            }
+        ]
+    }
+}
