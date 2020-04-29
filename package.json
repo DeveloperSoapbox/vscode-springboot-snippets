@@ -2,7 +2,20 @@
     "name": "vscode-springboot-snippets",
     "displayName": "Spring Boot Snippets",
     "description": "Useful snippets for Spring Boot projects.",
-    "version": "0.0.1",
+    "version": "1.0.0",
+    "icon": "images/spring-boot.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DeveloperSoapbox/vscode-springboot-snippets.git"
+    },
+    "keywords": [
+        "Spring Boot",
+        "Spring Framework",
+        "Java"
+    ],
+    "scripts": {
+        "package": "npx vsce package"
+    },
     "engines": {
         "vscode": "^1.44.0"
     },

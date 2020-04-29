@@ -1,20 +1,102 @@
 {
-    "Spring Boot DB URL (SQLite) YAML": {
+    "Spring Boot DB YAML (SQLite)": {
         "prefix": [
-            "sb-yaml-sqlite"
-        ],
-        "body": [
-        ],
-        "description": "Generates Spring Boot datasource URL for SQLite database in application.yaml."
-    },
-    "Spring Boot DB URL (H2)": {
-        "prefix": [
-            "sb-yaml-h2"
+            "spring-sqlite"
         ],
         "body": [
             "spring:",
             "    datasource:",
-            "        url: jdbc:h2:mem::${0:databaseName}",
+            "        url: jdbc:sqlite:${1:databaseFilePath.db}",
+            "    #jpa:",
+            "        #hibernate:            ",
+            "            #show-sql: true",
+            "            #ddl-auto: create-drop"            
+        ],
+        "description": "Generates Spring Boot datasource URL for SQLite database in application.yaml."
+    },
+
+    "Spring Boot DB YAML (SQL Server)": {
+        "prefix": [
+            "spring-sqlserver"
+        ],
+        "body": [
+            "spring:",
+            "    datasource:",
+            "        url: jdbc:sqlserver://${1:databaseHost};databaseName=${2:databaseName}",
+            "        username: ${3:username}",
+            "        password: ${4:password}",
+            "        driverClassName: oracle.jdbc.driver.OracleDriver",
+            "    #jpa:",
+            "        #hibernate:            ",
+            "            #show-sql: true",
+            "            #ddl-auto: create-drop"
+        ],
+        "description": "Spring Boot datasource properties for MySQL database in application.yaml."
+    },
+
+    "Spring Boot DB YAML (Oracle)": {
+        "prefix": [
+            "spring-oracle"
+        ],
+        "body": [
+            "spring:",
+            "    datasource:",
+            "        url: jdbc:oracle:thin:@${1:databaseHost}:1521:${2:databaseName}",
+            "        username: ${3:username}",
+            "        password: ${4:password}",
+            "        driverClassName: oracle.jdbc.driver.OracleDriver",
+            "    #jpa:",
+            "        #hibernate:            ",
+            "            #show-sql: true",
+            "            #ddl-auto: create-drop"
+        ],
+        "description": "Spring Boot datasource properties for MySQL database in application.yaml."
+    },
+
+    "Spring Boot DB YAML (PostgreSQL)": {
+        "prefix": [
+            "spring-postgresql"
+        ],
+        "body": [
+            "spring:",
+            "    datasource:",
+            "        url: jdbc:postgresql://${1:databaseHost}:5432/${2:databaseName}",
+            "        username: ${3:username}",
+            "        password: ${4:password}",
+            "    #jpa:",
+            "        #hibernate:            ",
+            "            #show-sql: true",
+            "            #ddl-auto: create-drop"
+        ],
+        "description": "Spring Boot datasource properties for MySQL database in application.yaml."
+    },
+
+    "Spring Boot DB YAML (MySQL)": {
+        "prefix": [
+            "spring-mysql"
+        ],
+        "body": [
+            "spring:",
+            "    datasource:",
+            "        url: jdbc:mysql://${1:databaseHost}:3306/${2:databaseName}",
+            "        username: ${3:username}",
+            "        password: ${4:password}",
+            "    #jpa:",
+            "        #hibernate:            ",
+            "            #show-sql: true",
+            "            #ddl-auto: create-drop"
+        ],
+        "description": "Spring Boot datasource properties for MySQL database in application.yaml."
+    },
+
+    "Spring Boot DB YAML (H2)": {
+        "prefix": [
+            "spring-h2"
+        ],
+        "body": [
+            "spring:",
+            "    datasource:",
+            "        url: jdbc:h2:mem::${1:databaseName}",
             "        driverClassName: org.h2.Driver",
             "    jpa:",
             "        hibernate:            ",
