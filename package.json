@@ -1,5 +1,6 @@
 {
     "name": "vscode-springboot-snippets",
+    "publisher": "developersoapbox",
     "displayName": "Spring Boot Snippets",
     "description": "Useful snippets for Spring Boot projects.",
     "version": "1.0.0",
