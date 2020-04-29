@@ -1,65 +1,38 @@
-# vscode-springboot-snippets README
+# Spring Boot Snippets for VS Code
 
-This is the README for your extension "vscode-springboot-snippets". After writing up a brief description, we recommend including the following sections.
+This extension for Visual Studio Code adds useful snippets for Spring Boot.  These are especially useful for creating REST apis, and configuring database connection properties.
 
-## Features
+## Usage
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Type part of a snippet, press `enter`, and the snippet unfolds.
 
-For example if there is an image subfolder under your extension project workspace:
+Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to activate snippets from within the editor.
 
-\!\[feature X\]\(images/feature-x.png\)
+### Java Snippets
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+| Snippet                      | Purpose                                                              |
+| ---------------------------- | -------------------------------------------------------------------- |
+| `spring-crudctrl`            | Spring controller with CRUD actions implemented                      |
+| `spring-crudrepo`            | Spring Data JPA CRUD repository with REST api annotation             |
+| `spring-entity`              | JPA entity with ID field                                             |
 
-## Requirements
+### application.properties / application.yaml Snippets
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+| Snippet                      | Purpose                                                              |
+| ---------------------------- | -------------------------------------------------------------------- |
+| `spring-sqlite`              | SQLite database jdbc url and properties                              |
+| `spring-sqlserver`           | SQL Server database jdbc url and properties                          |
+| `spring-oracle`              | Oracle database jdbc url and properties                              |
+| `spring-postgresql`          | PostgreSQL database jdbc url and properties                          |
+| `spring-mysql`               | MySQL database jdbc url and properties                               |
+| `spring-h2`                  | H2 database jdbc url and properties                                  |
 
-## Extension Settings
+## Installation
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Install Visual Studio Code 1.44.0 or higher
+1. Launch Code
+1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
+1. Select `Install Extension`
+1. Choose the extension
+1. Reload Visual Studio Code
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

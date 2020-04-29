@@ -13,7 +13,7 @@
             "@RepositoryRestResource",
             "public interface ${2:repositoryName} extends CrudRepository<${3:entityName}, ${4:entityIdType}>{}"
         ],
-        "description": "JPA CRUD repository with rest api annotation"
+        "description": "JPA CRUD repository with REST api annotation"
     },
     "Spring JPA Entity": {
         "prefix": [
