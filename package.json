@@ -3,7 +3,7 @@
     "publisher": "developersoapbox",
     "displayName": "Spring Boot Snippets",
     "description": "Useful snippets for Spring Boot projects.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "images/spring-boot.png",
     "repository": {
         "type": "git",
