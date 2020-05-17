@@ -4,6 +4,8 @@ This extension for Visual Studio Code adds useful snippets for Spring Boot.  The
 
 ## Usage
 
+For a detailed walkthrough, please use this youtube video - https://www.youtube.com/watch?v=qI7hTw8aMaU
+
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to activate snippets from within the editor.
