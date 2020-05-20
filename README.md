@@ -17,6 +17,11 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 | `spring-crudctrl`            | Spring controller with CRUD actions implemented                      |
 | `spring-crudrepo`            | Spring Data JPA CRUD repository with REST api annotation             |
 | `spring-entity`              | JPA entity with ID field                                             |
+| `spring-ctrl-getall`         | Controller GET action for collection                                 |
+| `spring-ctrl-getone`         | Controller GET action for single item                                |
+| `spring-ctrl-post`           | Controller POST action                                               |
+| `spring-ctrl-put`            | Controller PUT action                                                |
+| `spring-ctrl-delete`         | Controller DELETE action                                             |
 
 ### application.properties / application.yaml Snippets
 
