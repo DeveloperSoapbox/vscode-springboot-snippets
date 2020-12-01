@@ -6,12 +6,11 @@
         "body": [
             "package ${1:packageName};",
             "",
-            "import org.springframework.data.repository.CrudRepository;",
-            "import org.springframework.data.rest.core.annotation.RepositoryRestResource;",
-            "",
-            "//Remove @RepositoryRestResource below to disable auto REST api:",
-            "@RepositoryRestResource",
-            "public interface ${2:repositoryName} extends CrudRepository<${3:entityName}, ${4:entityIdType}>{}"
+            "import org.springframework.data.jpa.repository.JpaRepository;",
+            "import org.springframework.stereotype.Repository;",
+
+            "@Repository",
+            "public interface ${2:repositoryName} extends JpaRepository<${3:entityName}, ${4:entityIdType}>{}"
         ],
         "description": "JPA CRUD repository with REST api annotation"
     },
@@ -26,24 +25,15 @@
             "import javax.persistence.GeneratedValue;",
             "import javax.persistence.GenerationType;",
             "import javax.persistence.Id;",
+            "import lombok.Data;",
             "",
+            "@Data",
             "@Entity",
             "class ${2:entityClassName} {",
             "",
             "    @Id",
             "    @GeneratedValue(strategy = GenerationType.IDENTITY)",
             "    private ${3:entityIdType} id;",
-            "",
-            "    public ${2:entityClassName}() {",
-            "    }",
-            "",
-            "    public ${3:entityIdType} getId() {",
-            "        return id;",
-            "    }",
-            "",
-            "    public void setId(${3:entityIdType} id) {",
-            "        this.id = id;",
-            "    }",
             "}"
         ],
         "description": "JPA entity with ID field"

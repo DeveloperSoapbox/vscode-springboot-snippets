@@ -4,7 +4,7 @@
     "displayName": "Spring Boot Snippets",
     "description": "Useful snippets for Spring Boot projects.",
     "version": "1.0.1",
-    "icon": "images/spring-boot.png",
+    "icon": "images/spring-snippets.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/DeveloperSoapbox/vscode-springboot-snippets.git"
