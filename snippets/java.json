@@ -14,7 +14,7 @@
         ],
         "description": "JPA repository with REST api annotation"
     },
-    "Spring CRUD Rest Repository": {
+    "Spring JPA CRUD Rest Repository": {
         "prefix": [
             "spring-crudrepo"
         ],
@@ -28,9 +28,9 @@
             "@RepositoryRestResource",
             "public interface ${2:repositoryName} extends CrudRepository<${3:entityName}, ${4:entityIdType}>{}"
         ],
-        "description": "CRUD repository with REST api annotation"
+        "description": "JPA CRUD repository with REST api annotation"
     },
-    "Spring JPA Entity wit Lombok": {
+    "Spring JPA Entity with Lombok": {
         "prefix": [
             "spring-entity"
         ],
