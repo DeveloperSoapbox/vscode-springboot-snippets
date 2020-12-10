@@ -14,10 +14,6 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 
 | Snippet                      | Purpose                                                              |
 | ---------------------------- | -------------------------------------------------------------------- |
-
-spring-jparepo: for the JPA repo changes
-spring-lombok-entity: for the Lombok entity changes
-
 | `spring-crudctrl`            | Spring controller with CRUD actions implemented                      |
 | `spring-crudrepo`            | Spring Data JPA CRUD repository with REST api annotation             |
 | `spring-jparepo`            | Spring Data JPA repository with REST api annotation             |
