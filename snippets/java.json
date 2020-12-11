@@ -1,6 +1,21 @@
 {
     "Spring JPA Rest Repository": {
         "prefix": [
+            "spring-jparepo"
+        ],
+        "body": [
+            "package ${1:packageName};",
+            "",
+            "import org.springframework.data.jpa.repository.JpaRepository;",
+            "import org.springframework.stereotype.Repository;",
+
+            "@Repository",
+            "public interface ${2:repositoryName} extends JpaRepository<${3:entityName}, ${4:entityIdType}>{}"
+        ],
+        "description": "JPA repository with REST api annotation"
+    },
+    "Spring JPA CRUD Rest Repository": {
+        "prefix": [
             "spring-crudrepo"
         ],
         "body": [
@@ -15,6 +30,31 @@
         ],
         "description": "JPA CRUD repository with REST api annotation"
     },
+    "Spring JPA Entity with Lombok": {
+        "prefix": [
+            "spring-entity"
+        ],
+        "body": [
+            "package ${1:packageName};",
+            "",
+            "import javax.persistence.Entity;",
+            "import javax.persistence.GeneratedValue;",
+            "import javax.persistence.GenerationType;",
+            "import javax.persistence.Id;",
+            "import lombok.Data;",
+            "",
+            "//To use the @Data annotation you should add the Lombok dependency.",
+            "@Data",
+            "@Entity",
+            "class ${2:entityClassName} {",
+            "",
+            "    @Id",
+            "    @GeneratedValue(strategy = GenerationType.IDENTITY)",
+            "    private ${3:entityIdType} id;",
+            "}"
+        ],
+        "description": "JPA entity with ID field and Lombok data annotation"
+    },    
     "Spring JPA Entity": {
         "prefix": [
             "spring-entity"
@@ -47,7 +87,7 @@
             "}"
         ],
         "description": "JPA entity with ID field"
-    },    
+    },
     "Spring CRUD Controller": {
         "prefix": [
             "spring-crudctrl"
