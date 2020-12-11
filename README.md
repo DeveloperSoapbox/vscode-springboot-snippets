@@ -16,9 +16,9 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 | ---------------------------- | -------------------------------------------------------------------- |
 | `spring-crudctrl`            | Spring controller with CRUD actions implemented                      |
 | `spring-crudrepo`            | Spring Data JPA CRUD repository with REST api annotation             |
-| `spring-jparepo`            | Spring Data JPA repository with REST api annotation             |
+| `spring-jparepo`             | Spring Data JPA repository with REST api annotation                  |
 | `spring-entity`              | JPA entity with ID field                                             |
-| `spring-lombok-entity`              | JPA entity with ID field and Lombok `@Data` annotation                                            |
+| `spring-lombok-entity`       | JPA entity with ID field and Lombok `@Data` annotation               |
 | `spring-ctrl-getall`         | Controller GET action for collection                                 |
 | `spring-ctrl-getone`         | Controller GET action for single item                                |
 | `spring-ctrl-post`           | Controller POST action                                               |

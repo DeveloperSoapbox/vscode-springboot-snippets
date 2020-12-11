@@ -9,3 +9,7 @@ All notable changes to the "vscode-springboot-snippets" extension will be docume
 ## 1.1.0
 
 - Added snippets for individual controller actions (spring-ctrl-getall, spring-ctrl-getone, spring-ctrl-post, spring-ctrl-put, spring-ctrl-delete)
+
+## 1.2.0
+
+- Added new snippets for spring-jparepo and spring-lombok-entity (By @abdorah)
