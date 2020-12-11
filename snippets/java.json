@@ -32,7 +32,7 @@
     },
     "Spring JPA Entity with Lombok": {
         "prefix": [
-            "spring-entity"
+            "spring-lombok-entity"
         ],
         "body": [
             "package ${1:packageName};",
